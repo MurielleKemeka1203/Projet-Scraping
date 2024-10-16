@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import json
 import csv
 import os
 
@@ -93,6 +94,6 @@ def save_to_csv(data, filename='books_scraped.csv'):
         writer.writerow(data)
 
 # Example usage
-book_url = 'https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html'
+book_url = 'https://books.toscrape.com/catalogue/a-paris-apartment_612/index.html'
 
 book_details = get_book_details(book_url)
